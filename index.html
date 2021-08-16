@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css.css">
+        <title>Enterlight</title>
+        
+    </head>
+    <body>
+        <header>
+            <div class="menu">
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Empresa</a></li>
+                        <li><a href="#">Produto</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="galeria">
+                <img class="foto" src="teste 1/Imagens/slide-full-banner.png">
+                <img class="foto"src="teste 1/Imagens/slide-full-banner-1920x390px-01.png">
+                <img class="foto"src="teste 1/Imagens/slide-full-banner-1920x390px-02.png">
+            </section>
+            </div>
+            <div class="container">
+                <form action="">
+                    <div class="formulario">
+                        <input type="name" name="name" id="name" placeholder="Digite o nome...">
+                    </div>
+                    <div class="formulario">
+                        <input id="url" type="text" placeholder="Digite a URL...">
+                    </div> 
+                </form>
+                <button id="button">ENVIAR</button>
+            </div>
+        </main>
+    </body>
+    <script>
+            var button = document.getElementById('button')
+
+            button.addEventListener('click',function(event){
+                var imageurl = document.getElementById('url').value
+
+                var img = document.createElement('img')
+
+                img.src = imageurl
+
+                document.body.appendChild(img)
+            })
+        </script>
+</html>
